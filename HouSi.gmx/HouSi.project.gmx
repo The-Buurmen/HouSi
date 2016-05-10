@@ -6,17 +6,21 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\walking</sprite>
-    <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\spr_walking</sprite>
+    <sprite>sprites\spr_house</sprite>
   </sprites>
-  <backgrounds name="background"/>
-  <paths name="paths"/>
+  <backgrounds name="background">
+    <background>background\bg_overview</background>
+  </backgrounds>
+  <paths name="paths">
+    <path>paths\pth_guy</path>
+  </paths>
   <objects name="objects">
-    <object>objects\guy</object>
-    <object>objects\wall</object>
+    <object>objects\spr_guy</object>
+    <object>objects\obj_house</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Overview</room>
+    <room>rooms\rm_overview</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

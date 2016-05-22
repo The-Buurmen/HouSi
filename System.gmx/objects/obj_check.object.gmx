@@ -25,7 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.N[? p[0]] = p[1];
+            <string>if (global.O[? p[0]] != p[2]) {
+    tmp = global.N[? p[0]];
+    global.N[? p[0]] = p[1];
+    directCalculate();
+    if (global.N[? "mon"] &lt; 0 or global.N[? "tim"] &lt; 0) {
+        global.N[? p[0]] = tmp;
+        directCalculate();
+    }
+}
 </string>
           </argument>
         </arguments>

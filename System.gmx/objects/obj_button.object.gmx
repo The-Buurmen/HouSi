@@ -25,8 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.N[? p[0]] + p[1] &gt;= p[2] and global.N[? p[0]] + p[1] &lt;= p[3]) {
+            <string>if (global.N[? p[0]] + p[1] &gt;= p[2] and global.N[? p[0]] + p[1] &lt;= p[3] and global.N[? p[0]] + p[1] &gt;= global.O[? p[0]]) {
     global.N[? p[0]] += p[1];
+    directCalculate();
+    if (global.N[? "mon"] &lt; 0 or global.N[? "tim"] &lt; 0) {
+        global.N[? p[0]] -= p[1];
+        directCalculate();
+    }
 }
 </string>
           </argument>

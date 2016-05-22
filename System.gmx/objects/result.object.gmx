@@ -28,6 +28,8 @@
             <string>global.O = ds_map_create();
 global.N[? "year"] += 1
 ds_map_copy(global.O, global.N);
+
+global.O[? "mon"] = 7500
 </string>
           </argument>
         </arguments>

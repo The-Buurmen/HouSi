@@ -3,12 +3,16 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
-  <sounds name="sound"/>
+  <NewExtensions>
+    <extension index="0">extensions\Free Button &amp; Text Pack</extension>
+  </NewExtensions>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_walking</sprite>
     <sprite>sprites\spr_house</sprite>
-	<sprites name="strt_screen">
+    <sprites name="strt_screen">
       <sprite>sprites\Quit_2</sprite>
       <sprite>sprites\Quit_1</sprite>
       <sprite>sprites\options_2</sprite>
@@ -17,6 +21,23 @@
       <sprite>sprites\Logo</sprite>
       <sprite>sprites\start_1</sprite>
     </sprites>
+    <sprite>sprites\TextButton</sprite>
+    <sprite>sprites\Buttons</sprite>
+    <sprite>sprites\ArrowL</sprite>
+    <sprite>sprites\ArrowR</sprite>
+    <sprite>sprites\Play</sprite>
+    <sprite>sprites\Quit</sprite>
+    <sprite>sprites\Options</sprite>
+    <sprite>sprites\Gears</sprite>
+    <sprite>sprites\GearsNWrenchs3D</sprite>
+    <sprite>sprites\RoundedShapes</sprite>
+    <sprite>sprites\GeneralShapes</sprite>
+    <sprite>sprites\GeneralShapes3D</sprite>
+    <sprite>sprites\GeneralSOutline3D</sprite>
+    <sprite>sprites\GeneralShapesFragments</sprite>
+    <sprite>sprites\Wrench</sprite>
+    <sprite>sprites\GearJelly</sprite>
+    <sprite>sprites\WrenchDemo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_overview</background>
@@ -25,19 +46,38 @@
   <paths name="paths">
     <path>paths\pth_guy</path>
   </paths>
+  <scripts name="scripts">
+    <script>scripts\Reference.gml</script>
+  </scripts>
   <objects name="objects">
-    <object>objects\spr_guy</object>
-    <object>objects\obj_house</object>
     <objects name="start_scrn">
       <object>objects\btn_new_game</object>
       <object>objects\btn_quit</object>
       <object>objects\btn_options</object>
       <object>objects\strt_logo</object>
+      <object>objects\strt_controller</object>
     </objects>
+    <objects name="room">
+      <object>objects\spr_guy</object>
+      <object>objects\obj_house</object>
+      <object>objects\rm_controler</object>
+    </objects>
+    <object>objects\Arrow1_HighlightParent</object>
+    <object>objects\Arrow2</object>
+    <object>objects\PlayB</object>
+    <object>objects\QuitB</object>
+    <object>objects\OptionsB</object>
+    <object>objects\Gear_SpinParent</object>
+    <object>objects\Gear_Spin2</object>
+    <object>objects\WiggleWrench</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\Timeline</timeline>
+  </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_overview</room>
     <room>rooms\start_scrn</room>
+    <room>rooms\rm_overview</room>
+    <room>rooms\Example</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

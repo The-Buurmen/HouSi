@@ -55,7 +55,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>Quit_2</sprite>
+            <sprite>quit_2</sprite>
           </argument>
           <argument>
             <kind>0</kind>

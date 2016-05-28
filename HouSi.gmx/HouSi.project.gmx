@@ -3,20 +3,35 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
-  <sounds name="sound"/>
+  <NewExtensions>
+    <extension index="0">extensions\Free Button &amp; Text Pack</extension>
+  </NewExtensions>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_mute</sprite>
+    <sprite>sprites\spr_unmute</sprite>
+    <sprite>sprites\spr_fade</sprite>
     <sprite>sprites\spr_walking</sprite>
     <sprite>sprites\spr_house</sprite>
-	<sprites name="strt_screen">
-      <sprite>sprites\Quit_2</sprite>
+    <sprites name="strt_screen">
       <sprite>sprites\Quit_1</sprite>
-      <sprite>sprites\options_2</sprite>
+      <sprite>sprites\quit_2</sprite>
       <sprite>sprites\options_1</sprite>
-      <sprite>sprites\start_2</sprite>
+      <sprite>sprites\options_2</sprite>
       <sprite>sprites\Logo</sprite>
       <sprite>sprites\start_1</sprite>
+      <sprite>sprites\start_2</sprite>
     </sprites>
+    <sprite>sprites\Options2</sprite>
+    <sprite>sprites\Options</sprite>
+    <sprite>sprites\spr_quit</sprite>
+    <sprite>sprites\spr_Store</sprite>
+    <sprite>sprites\spr_Store2</sprite>
+    <sprite>sprites\menu_fade</sprite>
+    <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_button2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_overview</background>
@@ -25,19 +40,37 @@
   <paths name="paths">
     <path>paths\pth_guy</path>
   </paths>
+  <scripts name="scripts">
+    <script>scripts\Reference.gml</script>
+  </scripts>
   <objects name="objects">
-    <object>objects\spr_guy</object>
-    <object>objects\obj_house</object>
     <objects name="start_scrn">
-      <object>objects\btn_new_game</object>
+      <object>objects\btn_start</object>
       <object>objects\btn_quit</object>
       <object>objects\btn_options</object>
       <object>objects\strt_logo</object>
+      <object>objects\strt_controller</object>
+    </objects>
+    <objects name="room">
+      <object>objects\btn_mute</object>
+      <object>objects\btn_quitgame</object>
+      <object>objects\obj_fade</object>
+      <object>objects\spr_guy</object>
+      <object>objects\obj_house</object>
+      <object>objects\rm_controler</object>
+      <object>objects\obj_options</object>
+      <object>objects\btn_Store</object>
+      <object>objects\btn_Button</object>
+      <object>objects\obj_menu</object>
+      <object>objects\obj_menu2</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\Timeline</timeline>
+  </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_overview</room>
     <room>rooms\start_scrn</room>
+    <room>rooms\rm_overview</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

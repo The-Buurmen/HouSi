@@ -15,12 +15,14 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\constants.gml</script>
     <script>scripts\initData.gml</script>
     <script>scripts\printData.gml</script>
     <script>scripts\initButtons.gml</script>
     <script>scripts\ac.gml</script>
     <script>scripts\directCalculate.gml</script>
     <script>scripts\finalCalculate.gml</script>
+    <script>scripts\printResult.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font</font>
@@ -32,13 +34,14 @@
     <object>objects\prevroom</object>
     <object>objects\result</object>
     <object>objects\obj_button</object>
+    <object>objects\obj_job</object>
     <object>objects\obj_check</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\inits</room>
     <room>rooms\change</room>
     <room>rooms\results</room>
+    <room>rooms\theend</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

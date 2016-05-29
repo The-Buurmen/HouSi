@@ -1,13 +1,35 @@
-global.N[? "mon"] = global.O[? "mon"]
-- (global.N[? "sol"] - global.O[? "sol"]) * 3000
-- (global.N[? "ins"] - global.O[? "ins"]) * 1200
-- (global.N[? "appl"] - global.O[? "appl"]) * 200
+switch (global.N[? "gov"]) {
+    case "gray":
+        solp = 3000;
+        windp = 24000;
+        break;
+    case "neut":
+        solp = 2500;
+        windp = 21000;
+        break;
+    case "green":
+        solp = 2000;
+        windp = 16000;
+        break;
+}
+
+
+investments =
+- (global.N[? "sol"] - global.O[? "sol"]) * solp
+- (global.N[? "ins"] - global.O[? "ins"]) * 1500
+- (global.N[? "appl"] - global.O[? "appl"]) * 350
+- (global.N[? "wind"] - global.O[? "wind"]) * windp
+- global.N[? "garden"] * 100
 ;
 
-global.N[? "tim"] = 3500
+global.N[? "mon"] = global.O[? "mon"] + investments;
+
+global.N[? "tim"] = global.TIME
 - global.N[? "job"] * 50
 - 50
 - global.N[? "rec"] * 25
+- global.N[? "garden"] * 75
+- global.N[? "clean"] * 30
 ;
 
 switch (global.N[? "tra"]) {
@@ -18,7 +40,7 @@ switch (global.N[? "tra"]) {
         global.N[? "tim"] -= 500;
         break;
     case "bic": 
-        global.N[? "tim"] -= 650;
+        global.N[? "tim"] -= 750;
         break;
 }
 

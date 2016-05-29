@@ -26,10 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>if (global.O[? p[0]] != p[2]) {
+    mono = global.N[? "mon"];
+    timo = global.N[? "tim"];
     tmp = global.N[? p[0]];
+    
     global.N[? p[0]] = p[1];
     directCalculate();
-    if (global.N[? "mon"] &lt; 0 or global.N[? "tim"] &lt; 0) {
+    if ((global.N[? "mon"] &lt; 0 and global.N[? "mon"] &lt; mono) or global.N[? "tim"] &lt; 0) {
         global.N[? p[0]] = tmp;
         directCalculate();
     }

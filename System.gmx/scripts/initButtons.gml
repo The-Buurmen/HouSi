@@ -20,11 +20,11 @@
 (instance_create(416, 160, obj_check)).p = ac("misc", "av", -1);
 (instance_create(448, 160, obj_check)).p = ac("misc", "max", -1);
 
-(instance_create(384, 192, obj_button)).p = ac("job", -1, 12, 48);
-(instance_create(416, 192, obj_button)).p = ac("job", 1, 12, 48);
+(instance_create(384, 192, obj_job)).p = ac("job", -1, 12, 48);
+(instance_create(416, 192, obj_job)).p = ac("job", 1, 12, 48);
 
-(instance_create(384, 224, obj_check)).p = ac("ins", 0, 1);
-(instance_create(416, 224, obj_check)).p = ac("ins", 1, 1);
+(instance_create(384, 224, obj_button)).p = ac("ins", -1, 0, 4);
+(instance_create(416, 224, obj_button)).p = ac("ins", 1, 0,4);
 
 (instance_create(384, 256, obj_button)).p = ac("appl", -1, 0, 5);
 (instance_create(416, 256, obj_button)).p = ac("appl", 1, 0, 5);
@@ -32,3 +32,12 @@
 (instance_create(384, 288, obj_check)).p = ac("gov", "gray", -1);
 (instance_create(416, 288, obj_check)).p = ac("gov", "neut", -1);
 (instance_create(448, 288, obj_check)).p = ac("gov", "green", -1);
+
+(instance_create(384, 320, obj_check)).p = ac("wind", 0, 1);
+(instance_create(416, 320, obj_check)).p = ac("wind", 1, 1);
+
+(instance_create(384, 352, obj_check)).p = ac("garden", 0, -1);
+(instance_create(416, 352, obj_check)).p = ac("garden", 1, -1);
+
+(instance_create(384, 384, obj_check)).p = ac("clean", 0, -1);
+(instance_create(416, 384, obj_check)).p = ac("clean", 1, -1);

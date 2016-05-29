@@ -20,6 +20,6 @@
   <width>130</width>
   <height>60</height>
   <frames>
-    <frame index="0">images\spr_unmute_0.png</frame>
+    <frame index="0">images\spr_CW_0.png</frame>
   </frames>
 </sprite>

@@ -11,7 +11,9 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_mute</sprite>
+    <sprite>sprites\spr_mute2</sprite>
     <sprite>sprites\spr_unmute</sprite>
+    <sprite>sprites\spr_unmute2</sprite>
     <sprite>sprites\spr_fade</sprite>
     <sprite>sprites\spr_walking</sprite>
     <sprite>sprites\spr_house</sprite>
@@ -27,11 +29,18 @@
     <sprite>sprites\Options2</sprite>
     <sprite>sprites\Options</sprite>
     <sprite>sprites\spr_quit</sprite>
-    <sprite>sprites\spr_Store</sprite>
-    <sprite>sprites\spr_Store2</sprite>
+    <sprite>sprites\spr_HI</sprite>
+    <sprite>sprites\spr_HI2</sprite>
     <sprite>sprites\menu_fade</sprite>
-    <sprite>sprites\spr_button</sprite>
-    <sprite>sprites\spr_button2</sprite>
+    <sprite>sprites\spr_J_T</sprite>
+    <sprite>sprites\spr_J_T2</sprite>
+    <sprite>sprites\spr_CW</sprite>
+    <sprite>sprites\spr_CW2</sprite>
+    <sprite>sprites\spr_CP</sprite>
+    <sprite>sprites\spr_CP2</sprite>
+    <sprite>sprites\spr_Voting</sprite>
+    <sprite>sprites\spr_Voting2</sprite>
+    <sprite>sprites\invisible_door</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_overview</background>
@@ -53,16 +62,21 @@
     </objects>
     <objects name="room">
       <object>objects\btn_mute</object>
-      <object>objects\btn_quitgame</object>
-      <object>objects\obj_fade</object>
       <object>objects\spr_guy</object>
       <object>objects\obj_house</object>
       <object>objects\rm_controler</object>
-      <object>objects\obj_options</object>
-      <object>objects\btn_Store</object>
-      <object>objects\btn_Button</object>
-      <object>objects\obj_menu</object>
-      <object>objects\obj_menu2</object>
+      <object>objects\btn_HI</object>
+      <object>objects\btn_JT</object>
+      <object>objects\obj_CW</object>
+      <object>objects\obj_CP</object>
+      <object>objects\obj_Voting</object>
+      <object>objects\menu_HI</object>
+      <object>objects\menu_JT</object>
+      <object>objects\menu_CW</object>
+      <object>objects\menu_CP</object>
+      <object>objects\menu_Voting</object>
+      <object>objects\obj_door</object>
+      <object>objects\menu_parent</object>
     </objects>
   </objects>
   <timelines name="timelines">

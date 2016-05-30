@@ -7,7 +7,46 @@
   <persistent>0</persistent>
   <parentName>obj_parent_m</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>choices = ac(
+instance_create(x + 75, y + 183, obj_jobbutton),
+instance_create(x + 166, y + 183, obj_print),
+instance_create(x + 225, y + 183, obj_jobbutton),
+instance_create(x + 75, y + 298, obj_check),
+instance_create(x + 173, y + 298, obj_check),
+instance_create(x + 278, y + 298, obj_check)
+);
+
+choices[0].p = -1;
+choices[1].p = "job";
+choices[2].p = 1;
+choices[3].p = ac("tra", "car", -1);
+choices[4].p = ac("tra", "bic", -1);
+choices[5].p = ac("tra", "pt", -1);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

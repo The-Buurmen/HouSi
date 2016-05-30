@@ -10,16 +10,12 @@
     <sound>sound\snd_no</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Rob_stuff">
-      <sprites name="strt_screen">
-        <sprite>sprites\spr_quit</sprite>
-        <sprite>sprites\spr_quit_h</sprite>
-      </sprites>
-    </sprites>
     <sprites name="scr_start">
       <sprite>sprites\spr_logo</sprite>
       <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_start_h</sprite>
+      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_quit_h</sprite>
     </sprites>
     <sprites name="scr_intro">
       <sprite>sprites\spr_intro</sprite>
@@ -47,6 +43,12 @@
         <sprite>sprites\spr_comm_m</sprite>
         <sprite>sprites\spr_vote_m</sprite>
       </sprites>
+      <sprites name="choices">
+        <sprite>sprites\spr_check</sprite>
+        <sprite>sprites\spr_nocheck</sprite>
+        <sprite>sprites\spr_more</sprite>
+        <sprite>sprites\spr_less</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_bg</sprite>
     <sprites name="scr_overview">
@@ -63,7 +65,12 @@
     <path>paths\pth_guy</path>
   </paths>
   <scripts name="scripts">
+    <scripts name="helpers">
+      <script>scripts\ac.gml</script>
+    </scripts>
     <script>scripts\init_data.gml</script>
+    <script>scripts\calculate_direct.gml</script>
+    <script>scripts\calculate_final.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_opensanslight</font>
@@ -93,6 +100,12 @@
         <object>objects\obj_consump_m</object>
         <object>objects\obj_comm_m</object>
         <object>objects\obj_vote_m</object>
+      </objects>
+      <objects name="choices">
+        <object>objects\obj_check</object>
+        <object>objects\obj_button</object>
+        <object>objects\obj_jobbutton</object>
+        <object>objects\obj_print</object>
       </objects>
     </objects>
     <objects name="scr_overview">

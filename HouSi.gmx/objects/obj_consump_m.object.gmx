@@ -7,7 +7,55 @@
   <persistent>0</persistent>
   <parentName>obj_parent_m</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>choices = ac(
+instance_create(x + 75, y + 183, obj_check),
+instance_create(x + 197, y + 183, obj_check),
+instance_create(x + 342, y + 183, obj_check),
+instance_create(x + 75, y + 298, obj_check),
+instance_create(x + 197, y + 298, obj_check),
+instance_create(x + 342, y + 298, obj_check),
+instance_create(x + 75, y + 413, obj_check),
+instance_create(x + 197, y + 413, obj_check),
+instance_create(x + 342, y + 413, obj_check),
+instance_create(x + 75, y + 514, obj_check),
+instance_create(x + 173, y + 514, obj_check)
+);
+
+choices[0].p = ac("food", "min", -1);
+choices[1].p = ac("food", "av", -1);
+choices[2].p = ac("food", "max", -1);
+choices[3].p = ac("clot", "min", -1);
+choices[4].p = ac("clot", "av", -1);
+choices[5].p = ac("clot", "max", -1);
+choices[6].p = ac("misc", "min", -1);
+choices[7].p = ac("misc", "av", -1);
+choices[8].p = ac("misc", "max", -1);
+choices[9].p = ac("rec", 0, -1);
+choices[10].p = ac("rec", 1, -1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

@@ -1,15 +1,15 @@
 desc = 
 "Income" +
-"##Investments" +
-"##Transport" +
-"##Consumption"
+"#Investments" +
+"#Transport" +
+"#Regular consumption"
 ;
 
 numb =
 "€" + string(sallary) + 
-"##€" + string(investments) +
-"##€" + string(-transport) +
-"##€" + string(consumption * tax)
+"#€" + string(investments) +
+"#€" + string(-transport) +
+"#€" + string(consumption * tax)
 ;
 
 if (global.N[? "garden"] > 0) {
@@ -17,8 +17,8 @@ if (global.N[? "garden"] > 0) {
     numb += "#€" + string(global.N[? "garden"] * 500);
 }
 
-desc += "##Regular energy usage";
-numb += "##€" + string(-global.ENERGY);
+desc += "#Regular energy usage";
+numb += "#€" + string(-global.ENERGY);
 
 if (global.N[? "ins"] > 0) {
     desc += "#- Insulation savings";
@@ -42,8 +42,8 @@ if (global.N[? "wind"] > 0) {
 
 
 
-desc += "###Total";
-numb += "##________#" + string(summ);
+desc += "##Total";
+numb += "#________#" + string(summ);
 
 draw_set_halign(fa_left);
 draw_text(x, y, desc);

@@ -26,3 +26,5 @@ global.O[? "clean"] = 0;
 
 global.N = ds_map_create();
 ds_map_copy(global.N, global.O);
+
+calculate_direct();

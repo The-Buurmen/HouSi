@@ -71,13 +71,13 @@
     <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
-        <id>403</id>
+        <id>404</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
+        <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_if_object</functionname>
+        <functionname>action_if_number</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -89,11 +89,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>192</string>
+            <string>0</string>
           </argument>
           <argument>
-            <kind>0</kind>
-            <string>64</string>
+            <kind>4</kind>
+            <string>2</string>
           </argument>
         </arguments>
       </action>

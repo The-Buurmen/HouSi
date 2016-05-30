@@ -7,84 +7,107 @@
     <extension index="0">extensions\Free Button &amp; Text Pack</extension>
   </NewExtensions>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\snd_no</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_mute</sprite>
-    <sprite>sprites\spr_mute2</sprite>
-    <sprite>sprites\spr_unmute</sprite>
-    <sprite>sprites\spr_unmute2</sprite>
-    <sprite>sprites\spr_fade</sprite>
-    <sprite>sprites\spr_walking</sprite>
-    <sprite>sprites\spr_house</sprite>
-    <sprites name="strt_screen">
-      <sprite>sprites\Quit_1</sprite>
-      <sprite>sprites\quit_2</sprite>
-      <sprite>sprites\options_1</sprite>
-      <sprite>sprites\options_2</sprite>
-      <sprite>sprites\Logo</sprite>
-      <sprite>sprites\start_1</sprite>
-      <sprite>sprites\start_2</sprite>
+    <sprites name="Rob_stuff">
+      <sprites name="strt_screen">
+        <sprite>sprites\spr_quit</sprite>
+        <sprite>sprites\spr_quit_h</sprite>
+      </sprites>
     </sprites>
-    <sprite>sprites\Options2</sprite>
-    <sprite>sprites\Options</sprite>
-    <sprite>sprites\spr_quit</sprite>
-    <sprite>sprites\spr_HI</sprite>
-    <sprite>sprites\spr_HI2</sprite>
-    <sprite>sprites\menu_fade</sprite>
-    <sprite>sprites\spr_J_T</sprite>
-    <sprite>sprites\spr_J_T2</sprite>
-    <sprite>sprites\spr_CW</sprite>
-    <sprite>sprites\spr_CW2</sprite>
-    <sprite>sprites\spr_CP</sprite>
-    <sprite>sprites\spr_CP2</sprite>
-    <sprite>sprites\spr_Voting</sprite>
-    <sprite>sprites\spr_Voting2</sprite>
-    <sprite>sprites\invisible_door</sprite>
+    <sprites name="scr_start">
+      <sprite>sprites\spr_logo</sprite>
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_start_h</sprite>
+    </sprites>
+    <sprites name="scr_intro">
+      <sprite>sprites\spr_intro</sprite>
+    </sprites>
+    <sprites name="scr_game">
+      <sprite>sprites\spr_guy</sprite>
+      <sprite>sprites\spr_endround</sprite>
+      <sprite>sprites\spr_endround_h</sprite>
+      <sprites name="buttons">
+        <sprite>sprites\spr_job</sprite>
+        <sprite>sprites\spr_job_h</sprite>
+        <sprite>sprites\spr_investments</sprite>
+        <sprite>sprites\spr_investments_h</sprite>
+        <sprite>sprites\spr_consump</sprite>
+        <sprite>sprites\spr_consump_h</sprite>
+        <sprite>sprites\spr_comm</sprite>
+        <sprite>sprites\spr_comm_h</sprite>
+        <sprite>sprites\spr_vote</sprite>
+        <sprite>sprites\spr_vote_h</sprite>
+      </sprites>
+      <sprites name="menus">
+        <sprite>sprites\spr_job_m</sprite>
+        <sprite>sprites\spr_investments_m</sprite>
+        <sprite>sprites\spr_consump_m</sprite>
+        <sprite>sprites\spr_comm_m</sprite>
+        <sprite>sprites\spr_vote_m</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_bg</sprite>
+    <sprites name="scr_overview">
+      <sprite>sprites\spr_overview</sprite>
+      <sprite>sprites\spr_nextround</sprite>
+      <sprite>sprites\spr_nextround_h</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_overview</background>
-    <background>background\background1</background>
+    <background>background\bg_house</background>
+    <background>background\bg_fancy</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_guy</path>
   </paths>
   <scripts name="scripts">
-    <script>scripts\Reference.gml</script>
+    <script>scripts\init_data.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_opensanslight</font>
+  </fonts>
   <objects name="objects">
-    <objects name="start_scrn">
-      <object>objects\btn_start</object>
-      <object>objects\btn_quit</object>
-      <object>objects\btn_options</object>
-      <object>objects\strt_logo</object>
-      <object>objects\strt_controller</object>
+    <object>objects\obj_intro</object>
+    <object>objects\obj_bg</object>
+    <objects name="scr_start">
+      <object>objects\obj_start</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_logo</object>
     </objects>
-    <objects name="room">
-      <object>objects\btn_mute</object>
-      <object>objects\spr_guy</object>
-      <object>objects\obj_house</object>
-      <object>objects\rm_controler</object>
-      <object>objects\btn_HI</object>
-      <object>objects\btn_JT</object>
-      <object>objects\obj_CW</object>
-      <object>objects\obj_CP</object>
-      <object>objects\obj_Voting</object>
-      <object>objects\menu_HI</object>
-      <object>objects\menu_JT</object>
-      <object>objects\menu_CW</object>
-      <object>objects\menu_CP</object>
-      <object>objects\menu_Voting</object>
-      <object>objects\obj_door</object>
-      <object>objects\menu_parent</object>
+    <objects name="scr_game">
+      <object>objects\obj_guy</object>
+      <object>objects\obj_endround</object>
+      <objects name="buttons">
+        <object>objects\obj_job</object>
+        <object>objects\obj_investments</object>
+        <object>objects\obj_consump</object>
+        <object>objects\obj_comm</object>
+        <object>objects\obj_vote</object>
+      </objects>
+      <objects name="menus">
+        <object>objects\obj_parent_m</object>
+        <object>objects\obj_job_m</object>
+        <object>objects\obj_investments_m</object>
+        <object>objects\obj_consump_m</object>
+        <object>objects\obj_comm_m</object>
+        <object>objects\obj_vote_m</object>
+      </objects>
+    </objects>
+    <objects name="scr_overview">
+      <object>objects\obj_overview</object>
+      <object>objects\obj_nextround</object>
     </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\Timeline</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\start_scrn</room>
-    <room>rooms\rm_overview</room>
+    <room>rooms\scr_start</room>
+    <room>rooms\scr_intro</room>
+    <room>rooms\scr_game</room>
+    <room>rooms\scr_overview</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

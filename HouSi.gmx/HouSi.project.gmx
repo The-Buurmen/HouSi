@@ -119,8 +119,10 @@
   <rooms name="rooms">
     <room>rooms\scr_start</room>
     <room>rooms\scr_intro</room>
+    <room>rooms\scr_vote</room>
     <room>rooms\scr_game</room>
     <room>rooms\scr_overview</room>
+    <room>rooms\scr_end_20y</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -48,8 +48,8 @@ choices[5].p = ac("clot", "max", -1);
 choices[6].p = ac("misc", "min", -1);
 choices[7].p = ac("misc", "av", -1);
 choices[8].p = ac("misc", "max", -1);
-choices[9].p = ac("rec", 0, -1);
-choices[10].p = ac("rec", 1, -1);
+choices[9].p = ac("rec", 1, -1);
+choices[10].p = ac("rec", 0, -1);
 </string>
           </argument>
         </arguments>

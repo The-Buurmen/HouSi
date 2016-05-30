@@ -71,17 +71,26 @@
     <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
-        <id>221</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_previous_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.N[? "year"] &gt; 20) room_goto(scr_end_20y);
+else if (global.N[? "year"] % 4 == 1) room_goto(scr_vote);
+else room_goto(scr_game);
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

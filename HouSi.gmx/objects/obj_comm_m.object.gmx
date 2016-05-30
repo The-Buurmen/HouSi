@@ -26,8 +26,20 @@
           <argument>
             <kind>1</kind>
             <string>choices = ac(
-0
+instance_create(x + 75, y + 183, obj_check),
+instance_create(x + 173, y + 183, obj_check),
+instance_create(x + 75, y + 298, obj_check),
+instance_create(x + 173, y + 298, obj_check),
+instance_create(x + 75, y + 413, obj_check),
+instance_create(x + 173, y + 413, obj_check)
 );
+
+choices[0].p = ac("wind", 1, 1);
+choices[1].p = ac("wind", 0, 1);
+choices[2].p = ac("garden", 1, -1);
+choices[3].p = ac("garden", 0, -1);
+choices[4].p = ac("clean", 1, -1);
+choices[5].p = ac("clean", 0, -1);
 </string>
           </argument>
         </arguments>

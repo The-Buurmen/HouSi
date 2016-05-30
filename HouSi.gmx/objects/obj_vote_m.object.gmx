@@ -26,8 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>choices = ac(
-0
+instance_create(x + 75, y + 183, obj_check),
+instance_create(x + 199, y + 183, obj_check),
+instance_create(x + 343, y + 183, obj_check)
 );
+
+choices[0].p = ac("gov", "green", -1);
+choices[1].p = ac("gov", "neut", -1);
+choices[2].p = ac("gov", "gray", -1);
 </string>
           </argument>
         </arguments>

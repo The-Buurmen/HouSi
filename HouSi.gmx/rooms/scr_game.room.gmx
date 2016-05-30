@@ -56,7 +56,6 @@
     <instance objName="obj_job" x="192" y="160" name="inst_9AA21FAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_consump" x="192" y="352" name="inst_864CE816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_comm" x="192" y="448" name="inst_A64E2ED5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vote" x="192" y="544" name="inst_404768B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_endround" x="1008" y="752" name="inst_489D2633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
